@@ -34,9 +34,7 @@ const MainPage = () => {
     <div className="main-page">
       <Navbar />
       <Home />
-      <About />
-      <Projects />
-      <Contact />
+      
     </div>
   );
 };
