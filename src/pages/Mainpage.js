@@ -1,18 +1,44 @@
-import "./Mainpage.css"
-import React from 'react'
-import Navbar from '../components/Navbar'
-import { Element } from "react-scroll"
-import Home from "../components/Home"
-import About from "../components/About"
+import React, { useEffect } from 'react';
+import './Mainpage.css';
+import Navbar from '../components/Navbar';
+import Home from '../components/Home';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Projects from '../components/Projects';
 
-const Mainpage = () => {
+const MainPage = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('.fade-in, .fade-out');
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          section.classList.add('visible');
+          section.classList.remove('hidden');
+        } else {
+          section.classList.remove('visible');
+          section.classList.add('hidden');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Trigger the scroll handler on mount
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
-        <Navbar/>
-        <Home/>
-        <About/>
+    <div className="main-page">
+      <Navbar />
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
     </div>
-  )
-}
+  );
+};
 
-export default Mainpage
+export default MainPage;
