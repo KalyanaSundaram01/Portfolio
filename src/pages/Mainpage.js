@@ -35,6 +35,8 @@ const MainPage = () => {
       <Navbar />
       <Home />
       <About/>
+      <Projects/>
+      <Contact/>
     </div>
   );
 };
