@@ -31,7 +31,7 @@ user-friendly interfaces.</p>
          </div>
       </div>
       <div className="about-right-section">
-          <h2>Expertize</h2>
+          <h1>Expertize</h1>
           <div className="icon">
             <FaFigma/>
             <FaHtml5/>
