@@ -16,7 +16,7 @@ const Home = () => {
     <div className="home" id="home">
       <div className="left-section">
         <div className="heading">
-          <h1 className="hi">HI, I am </h1>
+          <h1 className="hi">Hi, I am </h1>
           <h1 className="name">K.G.KalyanaSundaram</h1>
         </div>
         <div className="text">

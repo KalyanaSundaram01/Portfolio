@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className={`navbar-menu ${isOpen ? 'active' : ''}`}>
                 <div className="navbar-item" onClick={() => handleScroll('home')}>Home</div>
                 <div className="navbar-item" onClick={() => handleScroll('about')}>About</div>
-                <div className="navbar-item" onClick={() => handleScroll('project')}>Projects</div>
+                <div className="navbar-item" onClick={() => handleScroll('project')}>Patents</div>
                 <div className="navbar-item" onClick={() => handleScroll('contact')}>Contact</div>
             </div>
 
