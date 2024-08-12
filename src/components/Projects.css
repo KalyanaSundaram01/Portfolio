@@ -25,6 +25,7 @@
     height: 500px;
     perspective: 1000px;
     margin-top: 30px;
+    padding: 1rem;
 }
 
 .flip-card {
@@ -71,6 +72,12 @@
     object-fit: cover;
 }
 
+.patent-text{
+    font-size: 20px;
+    text-align: justify;
+    padding: 5px;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 900px) {
     .patent h1 {
@@ -83,6 +90,7 @@
         margin-top: 20px;
         display: flex;
         flex-direction: column;
+        
     }
 
     .image {
@@ -93,16 +101,29 @@
     .patent-img {
         justify-content: center; /* Center images on smaller screens */
     }
+
+    .patent-text{
+        font-size: 12px;
+        text-align: justify;
+        padding: 5px;
+    }
+
+    .flip-card-back h2{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 480px) {
     .patent h1 {
-        font-size: 30px; /* Even smaller font size for very small screens */
+        font-size: 40px; /* Even smaller font size for very small screens */
     }
 
     .flip-container {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
         margin-top: 15px;
+    }
+    .flip-card-back h2{
+        font-size: 15px;
     }
 }

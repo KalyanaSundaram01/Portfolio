@@ -22,10 +22,10 @@ user-friendly interfaces.</p>
          <a href="https://github.com/KalyanaSundaram01" target="_blank" rel="noopener noreferrer">
          <FaGithub />
          </a>
-         <a href="https://github.com/KalyanaSundaram01" target="_blank" rel="noopener noreferrer">
+         <a href="https://www.linkedin.com/in/kgkalyanasundaram/" target="_blank" rel="noopener noreferrer">
          <FaLinkedin />
          </a>
-         <a href="https://github.com/KalyanaSundaram01" target="_blank" rel="noopener noreferrer">
+         <a href="https://www.instagram.com/pasakara_pasupathi/" target="_blank" rel="noopener noreferrer">
          <FaInstagram />
          </a>
          </div>
